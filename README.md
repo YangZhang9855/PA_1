@@ -1,4 +1,10 @@
-
+---
+title: 'PA1'
+author: "Yang Zhang"
+date: "2014年9月14日"
+output: html_document
+  keep_md:true
+---
 
 Peer Assessment 1 by Yang Zhang
 ===============================
@@ -94,5 +100,8 @@ detach(weekdays)
 attach(weekend)
 pattern2<-tapply(steps,interval,mean,na.rm=TRUE)
 plot(pattern2,main='weekend',xlab='interval',ylab='steps')
-knit2html('PA1_template.Rmd')
+```
+```{r,echo=TRUE}
+knit2html(input='PA1_template.Rmd',
+          output='PA1_template.html')
 ```
