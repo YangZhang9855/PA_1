@@ -1,3 +1,5 @@
+
+
 Peer Assessment 1 by Yang Zhang
 ===============================
 
@@ -88,4 +90,5 @@ detach(weekdays)
 attach(weekend)
 pattern2<-tapply(steps,interval,mean,na.rm=TRUE)
 plot(pattern2,main='weekend',xlab='interval',ylab='steps')
+knit2html('PA1_template.Rmd')
 ```
