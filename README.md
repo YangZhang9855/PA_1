@@ -32,6 +32,10 @@ attach(activity)
 pattern<-tapply(steps,interval,mean,na.rm=TRUE)
 plot(pattern,xlab='interval',ylab='steps')
 ```
+```{r,echo=TRUE}
+knit2html(input='PA1_template.Rmd',
+          output='PA1_template.html')
+```
 *Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 ```{r,echo=TRUE}
 maxstep<-max(pattern)
